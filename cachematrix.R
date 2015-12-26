@@ -30,8 +30,8 @@ cacheSolve <- function(x, ...) {
         if (!is.null(inver)) {
             return(inver)
         }
-        mat <- x$get()
-        inver <- solve(mat)
+        matrix <- x$get()
+        inver <- solve(matrix)
         x$setInverse(inver)
         inver
 }
